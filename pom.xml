@@ -58,22 +58,7 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.owasp</groupId>
-                <artifactId>dependency-check-maven</artifactId>
-                <version>1.4.2</version>
-                <configuration>
-                    <!-- Skip artifacts not bundled in distribution (provided scope) -->
-                    <skipProvidedScope>true</skipProvidedScope>
-                    <!-- Suppress false positives or dependencies that cannot be changed for specific reasons.-->
-                    <suppressionFile>suppressed-cves.xml</suppressionFile>
-                    <format>${dependency-check-format}</format>
-                </configuration>
-                <!-- Don't specify an execution, because this might take long and is not needed in every build.
-                     A report can be generated on demand using "mvn org.owasp:dependency-check-maven:check"
-                     report will be saved to target/dependency-check-report.html -->
-            </plugin>
-
+           
             <plugin>
                 <!-- Automatically applies license headers to files and fails build if one is missing. -->
                 <groupId>com.mycila</groupId>
