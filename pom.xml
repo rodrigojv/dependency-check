@@ -59,23 +59,7 @@
     <build>
         <plugins>
            
-            <plugin>
-                <!-- Automatically applies license headers to files and fails build if one is missing. -->
-                <groupId>com.mycila</groupId>
-                <artifactId>license-maven-plugin</artifactId>
-                <version>2.11</version>
-                <configuration>
-                    <header>LICENSE</header>
-                </configuration>
-
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            
         </plugins>
     </build>
 </project>
